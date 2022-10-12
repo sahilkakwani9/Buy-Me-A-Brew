@@ -47,7 +47,7 @@ function Main() {
           <div className='flex flex-wrap justify-around w-2/3 gap-4'>
             {memo.map((m,i)=>{
               if (i != 0){
-                return <div className=''>
+                return <div key={i}>
                   <a href="#" class="block align-center items-center min-h-[150px]  p-6 min-w-fit w-56 mb-4 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{m.name}</h5>
               <p class="font-normal text-gray-700 dark:text-gray-400">{m.message}</p>
